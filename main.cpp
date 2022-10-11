@@ -3,74 +3,79 @@
 using namespace std;
 
 int x;
+string y;
+int salary;
+int expenses;
 
-void start(){
+int start(){
     cout<<"Welcome to Brandon's Expense Tracker.";
-    cout<<"\n\n 1. Add expense";
-    cout<<"\n\n 2. Delete expense";
-    cout<<"\n\n 3. See all expenses";
-    cout<<"\n\n 4. Exit\n";
-    cout<<"Choose option (1-4):";
+    cout<<"\n\n 1. Input Salary";
+    cout<<"\n\n 2. Add expense";
+    cout<<"\n\n 3. Delete expense";
+    cout<<"\n\n 4. See all expenses";
+    cout<<"\n\n 5. Exit\n";
+    cout<<"Choose option (1-5):";
     cin>>x;
+
+    return x;
 }
 
-void expenses{expenseCount, string expense[],int cost[]
-    expensesCount++;
-    break;
-}
+int choice(int x, string y){
+         if(x==1){
+            cout<<"You have choosen to input salary, is this correct Y or N?";
+            cin>>y;
 
-void x_function(int x){
-    for(int i=0; i=500,i++){
-        if(x==1){
+            if(y == "N"){
+                start();
+            }    
+            else if(y == "Y"){
+                cout<<"Please input your salary.";
+                cin>>salary;
+            }
+         }
+        if(x==2){
             cout<<"You have choosen to add an expense is this correct Y or N?";
-
-            string x;
-            cin>> x;
+            cin>> y;
             
-            if(x == N){
+            if(y == "N"){
                 start();
             }
-            else if(x == Y){
+            else if(y == "Y"){
                 cout<<"Type the expense name followed by the amount.";
-                cin>>expenses,cost;
+                cin>>expenses;
             }
 
         }   
-        else if(x==2){
+        if(x==3){
             cout<<"You have choosen to delete an expense is this correst Y or N?";
+            cin>> y;
 
-            string x;
-            cin>> x;
-
-            if(x == N){
+            if(y == "N"){
                 start();
             }
-            else if(x == Y){
+            else if(y == "Y"){
                 cout<<"Type the expense you would like to delete.";
                 cin>>expenses;
             }
         }
-        else if(x==3){
+        if(x==4){
             cout<<"You have choosen to show all expenses is this correct Y or N?";
+            cin>>y;
 
-            string x;
-            in>>x;
-
-            if(x == N){
+            if(y == "N"){
             start();
             }
-            else if(x == Y){
+            else if(y == "Y"){
             cout<<expenses;
             } 
         }
-            else if(x==5){
+        if(x==5){
             cout<<"This program has to exit feature please choose again.";
             start();
             }
             else{
             cout<<"Incorrect input please try again.";
-            start():
+            start();
             }
-    }
-
 }
+
